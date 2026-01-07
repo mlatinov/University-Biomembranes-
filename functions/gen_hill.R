@@ -2,12 +2,12 @@
 #### Function to Generate Data
 gen_hill <- function(
   seed = set.seed(123),
-  n = 1000,              # N of Sim observations
+  n = 500,              # N of Sim observations
   u_min_par = c(2,20),   # μ_min  - Base Lysis when U = 0
   u_max_alpha = c(20,2), # μ_max  - Max Lysis when U = inf
   K  = c(log(1500),0.5), # K      - E (ED₅₀)
-  ni = c(3,1),           # ni      - Slope
-  phi = c(3,0.1)         # phi    - precision
+  ni = c(3,1),           # ni     - Slope
+  phi = c(2,0.1)         # phi    - precision
   ){
 
   #### Hill Equation μ = μ_min + (μ_max - μ_min) / [1 + (K/U)ⁿ] ####
@@ -35,7 +35,7 @@ gen_hill <- function(
   ## Combine into Dataframe ##
   gen_data <- data.frame(
     Electric_field_V_cm = E,
-    H_percent = hemolysis
+    H_percent = hemolysis * 100
   )
 
   #### Return ####
