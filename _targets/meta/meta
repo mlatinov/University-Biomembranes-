@@ -1,0 +1,6 @@
+name|type|data|command|depend|seed|path|time|size|bytes|format|repository|iteration|parent|children|seconds|warnings|error
+erythrocyte_lysis_data|stem|67d286d1e55eb7a2|32f349d2f9434f6b|2c530c1562a7fbd1|-684944783||t20459.7954299712s|s630b|630|rds|local|vector|||0.2||
+gen_hill|function|e4dec70a3b91c8ef
+explore_erythrocyte_lysis|function|7fb0092fc3adf929
+gen_erythrocyte_lysis_hill|stem|be3ed3881191bc05|282ae9dae5f07409|988c3dd0fa3bc4cc|482660122||t20459.9486397193s|s14405b|14405|rds|local|vector|||0.03||
+eda_erythrocyte_lysis|stem|4c8b87e33801e795|46b33ce48fce7bbf|6efac48514b8b231|-1913395226||t20459.9486422444s|s214991b|214991|rds|local|vector|||0.1|package 'patchwork' was built under R version 4.4.3|
